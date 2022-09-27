@@ -75,3 +75,4 @@ end
 gem "cssbundling-rails"
 gem "sass-rails"
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
+gem 'will_paginate', '~> 3.3'
