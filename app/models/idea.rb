@@ -1,2 +1,3 @@
 class Idea < ApplicationRecord
-end
+    validates :description, :author, presence: true
+  end
