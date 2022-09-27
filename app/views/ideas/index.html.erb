@@ -1,4 +1,16 @@
-<h1>This is my first app ever and I'm super excited to become a coder</h1>
-<button type="button" class="btn btn-primary">
-  Notifications <span class="badge text-bg-secondary">4</span>
-</button>
+<%= simple_form_for Idea.new do |f| %>
+  <%= f.input :description %>
+  <%= f.input :author %>
+  <%= f.submit 'Submit' %>
+<% end %>
+
+<% @ideas.each do |idea| %>
+<div class="card">
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p><%= idea.description %></p>
+      <footer class="blockquote-footer">by <%= idea.author %></footer>
+    </blockquote>
+  </div>
+</div>
+<% end %>
