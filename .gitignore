@@ -12,8 +12,7 @@
 /db/*.sqlite3-*
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
+/log
 !/log/.keep
 !/tmp/.keep
 
@@ -39,5 +38,5 @@
 
 /node_modules
 
-/vendor
 /tmp
+/vendor
